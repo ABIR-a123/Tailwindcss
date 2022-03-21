@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./dist/tailwind.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <meta name="google-site-verification" content="0b8cZwUonuHrANTiKBCslDhhRuzAzlDiaoq6uvxVXHI" />
+</head>
+
+<body id="home" class="bg-gray-100">
+  <nav class="bg-pink-200">
+    <div class="hidden md:block">
+      <div class="flex items-center justify-between h-24">
+        <div class="grid grid-cols-3 lg:gap-x-4 md:gap-x-3 ml-4">
+          <a href="#">Home</a>
+          <a href="#blogs">Blog</a>
+          <a href="#footer">Contact</a>
+        </div>
+
+        <div>
+          <img src="images/new-sudo.png" class="h-20 w-20" />
+        </div>
+
+        <div class="flex space-x-5 mr-4">
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="block md:hidden">
+      <div class="flex items-center justify-between h-24">
+        <div class="ml-4">
+          <img src="images/new-sudo.png" class="h-20 w-20" />
+        </div>
+
+        <div class="mr-4">
+          <button onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+
+      <div class="hidden" id="mobileMenuContent">
+        <div class="flex flex-col text-xl ml-4">
+          <a href="#" class="p-3">Home</a>
+          <a href="#blogs" class="p-3">Blog</a>
+          <a href="#footer" class="p-3">Contact</a>
+        </div>
+
+        <div class="flex ml-4 gap-x-4">
+          <a href="" class="p-3"><i class="fab fa-twitter"></i></a>
+          <a href="" class="p-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="" class="p-3"><i class="fab fa-instagram"></i></a>
+          <a href="" class="p-3"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="introduction" class=" bg-gradient-to-r from-pink-200 lg:p-10 md:p-5">
+    <div class="grid md:grid-cols-2 grid-cols-1">
+      <div id="intro-text"
+        class="flex flex-col justify-center align-middle text-center md:text-left p-2 lg:p-10 md:p-5 mb-5 wow animate__animated animate__fadeInLeft">
+        <h1 class="text-sm">Hello, I am <i class="fas fa-code"></i></h1>
+        <h1 class="lg:text-6xl md:text-4xl text-3xl mt-1">NextTech</h1>
+        <h1 class="lg:text-4xl md:text-3xl text-2xl mt-5">Web UI/UX Deginer</h1>
+        <p class="lg:text-4xl md:text-3xl text-2xl mt-5">Free Youtube Coding Channel</h1>
+
+        <p class="text-sm md:mt-14 mt-9">
+          If you think then you can create a new things.
+          <br />
+          I am passionate about my work and always try to improve the things.
+        </p>
+
+        <div class="flex space-x-5 mt-5 justify-center md:justify-start">
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div id="intro-image"
+        class="flex flex-col justify-center align-middle lg:p-10 md:p-5 p-3 wow animate__animated animate__fadeInRight">
+        <img src="images/undraw_on_the_office_fbfs.svg" />
+      </div>
+    </div>
+  </section>
+
+  <section id="blogs" class="p-10">
+    <div class="mb-10">
+      <h1 class="text-5xl">Blogs</h1>
+    </div>
+
+    <div class="grid lg:grid-cols-5 md:grid-cols-3 gap-5">
+      <div class="rounded-xl bg-blue-200 p-8 wow animate__animated animate__zoomIn">
+        <img class="rounded-xl" src="images/blog1.jpg" />
+
+        <h1 class="text-2xl mt-6 font-bold">Learn HTML</h1>
+        <p class="mt-3 text-sm">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!
+        </p>
+      </div>
+
+      <div class="rounded-xl bg-pink-200 p-8  wow animate__animated animate__zoomIn">
+        <img class="rounded-xl" src="images/blog2.jpg" />
+
+        <h1 class="text-2xl mt-6 font-bold">Learn CSS</h1>
+        <p class="mt-3 text-sm">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!
+        </p>
+      </div>
+
+      <div class="rounded-xl bg-blue-200 p-8  wow animate__animated animate__zoomIn">
+        <img class="rounded-xl" src="images/blog1.jpg" />
+
+        <h1 class="text-2xl mt-6 font-bold">Learn HTML</h1>
+        <p class="mt-3 text-sm">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!
+        </p>
+      </div>
+
+      <div class="rounded-xl bg-pink-200 p-8  wow animate__animated animate__zoomIn">
+        <img class="rounded-xl" src="images/blog2.jpg" />
+
+        <h1 class="text-2xl mt-6 font-bold">Learn CSS</h1>
+        <p class="mt-3 text-sm">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!
+        </p>
+      </div>
+
+      <div class="rounded-xl bg-blue-200 p-8 wow animate__animated animate__zoomIn">
+        <img class="rounded-xl" src="images/blog1.jpg" />
+
+        <h1 class="text-2xl mt-6 font-bold">Learn HTML</h1>
+        <p class="mt-3 text-sm">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!
+        </p>
+      </div>
+    </div>
+
+    <a href="blog.html">
+      <div class="border-4 hover:border-pink-400 grid grid-cols-1 md:grid-cols-2 mt-10 rounded-xl p-8 bg-pink-200">
+        <div>
+          <img src="images/blog2.jpg" class="rounded-xl" />
+        </div>
+
+        <div class="flex flex-col justify-center align-middle md:p-8 p-3">
+          <h1 class="text-2xl hover:underline">Learn HTML</h1>
+          <p class="text-sm mt-4">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working
+            hard!!!
+          </p>
+        </div>
+      </div>
+    </a>
+
+    <a href="google_seo_management_blog.html">
+      <div class="border-4 hover:border-pink-400 grid grid-cols-1 md:grid-cols-2 mt-10 rounded-xl p-8 bg-pink-200">
+        <div>
+          <img src="images/33333333333.png" class="rounded-xl" />
+        </div>
+
+        <div class="flex flex-col justify-center align-middle md:p-8 p-3">
+          <h1 class="text-2xl hover:underline">Google SEO Management</h1>
+          <p class="text-sm mt-4">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working
+            hard!!!
+          </p>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <section id="services" class="bg-gradient-to-l from-pink-200 lg:p-10 md:p-5 p-3">
+    <div class="mb-10">
+      <h1 class="text-5xl">Services</h1>
+    </div>
+
+    <div id="serviceMainGrid" class="grid md:grid-cols-2 grid-cols-1 gap-4">
+
+      <div id="firstService" class="grid grid-cols-12 bg-white rounded-xl">
+        <div id="serviceIcon"
+          class="bg-blue-600 col-span-2 rounded-l-xl flex justify-center place-items-center text-white">
+          <i class="fas fa-laptop-code text-2xl"></i>
+        </div>
+        <div id="serviceDescription" class="px-3 py-5 col-span-10">
+          <h1 class="text-2xl"> Web Designing </h1>
+          <p class="text-sm mt-3"> Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working
+            hard!!! </p>
+        </div>
+      </div>
+
+      <div id="secondService" class="grid grid-cols-12 bg-white rounded-xl">
+        <div id="serviceIcon"
+          class="bg-blue-600 col-span-2 rounded-l-xl flex justify-center place-items-center text-white">
+          <i class="fas fa-server text-2xl text-gray-100"></i>
+        </div>
+        <div id="serviceDescription" class="px-3 py-5 col-span-10">
+          <h1 class="text-2xl"> Web Deployment </h1>
+          <p class="text-sm mt-3"> Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working
+            hard!!! </p>
+        </div>
+      </div>
+
+      <div id="thirdService" class="grid grid-cols-12 bg-white rounded-xl">
+        <div id="serviceIcon"
+          class="bg-blue-600 col-span-2 rounded-l-xl flex justify-center place-items-center text-white">
+          <i class="fas fa-palette text-2xl text-gray-100"></i>
+        </div>
+        <div id="serviceDescription" class="px-3 py-5 col-span-10">
+          <h1 class="text-2xl"> UI/UX </h1>
+          <p class="text-sm mt-3"> Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working
+            hard!!! </p>
+        </div>
+      </div>
+
+      <div id="fourthService" class="grid grid-cols-12 bg-white rounded-xl">
+        <div id="serviceIcon"
+          class="bg-blue-600 col-span-2 rounded-l-xl flex justify-center place-items-center text-white">
+          <i class="fas fa-chart-pie text-2xl text-gray-100"></i>
+        </div>
+        <div id="serviceDescription" class="px-3 py-5 col-span-10">
+          <h1 class="text-2xl"> Digital Marketing </h1>
+          <p class="text-sm mt-3"> Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working
+            hard!!! </p>
+        </div>
+      </div>
+
+      <div id="fiveService" class="grid grid-cols-12 bg-white rounded-xl">
+        <div id="serviceIcon"
+          class="bg-blue-600 col-span-2 rounded-l-xl flex justify-center place-items-center text-white">
+          <i class="far fa-lightbulb text-2xl text-gray-100"></i>
+        </div>
+        <div id="serviceDescription" class="px-3 py-5 col-span-10">
+          <h1 class="text-2xl"> Logo Designing </h1>
+          <p class="text-sm mt-3"> Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working
+            hard!!! </p>
+        </div>
+      </div>
+
+      <div id="sixService" class="grid grid-cols-12 bg-white rounded-xl">
+        <div id="serviceIcon"
+          class="bg-blue-600 col-span-2 rounded-l-xl flex justify-center place-items-center text-white">
+          <i class="fas fa-laptop-code text-2xl text-gray-100"></i>
+        </div>
+        <div id="serviceDescription" class="px-3 py-5 col-span-10">
+          <h1 class="text-2xl"> SEO </h1>
+          <p class="text-sm mt-3"> Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working
+            hard!!! </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="portfolio"  class="md:p-10 p-3 bg-pink-200">
+    <div class="mb-10">
+      <h1 class="text-5xl">Portfolio</h1>
+    </div>
+
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="grid md:grid-cols-2 grid-cols-1 bg-white place-items-center">
+              <div id="websiteDescription" class="flex flex-col justify-center align-middle p-3 md:ml-20 ml-1">
+                <h1 class="text-3xl">Freelancing Website</h1>
+                <p class="mt-4 text-sm">Free resource that will help nderstand thecv designc process and improve theroi
+                  nderstand.</p>
+
+                <ul class="mt-8 text-sm flex flex-col ml-10">
+                  <li><i class="fas fa-chevron-right"></i> HTML 5</li>
+                  <li><i class="fas fa-chevron-right"></i> CSS 3</li>
+                  <li><i class="fas fa-chevron-right"></i> Git / GitHub</li>
+                  <li><i class="fas fa-chevron-right"></i> Photoshop</li>
+                  <li><i class="fas fa-chevron-right"></i> Web Deployment</li>
+                  <li class="mt-5"><button class="p-2 bg-blue-700 rounded text-white w-full">Visit <i
+                        class="fas fa-paper-plane"></i></button></li>
+                </ul>
+              </div>
+
+              <div id="websiteImage" class="p-3">
+                <img src="images/freelancer-portfolio-740-600.jpg" class="w-3/4 border-2 rounded-xl" />
+              </div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="grid md:grid-cols-2 grid-cols-1 bg-white place-items-center">
+              <div id="websiteDescription" class="flex flex-col justify-center align-middle p-3 md:ml-20 ml-1">
+                <h1 class="text-3xl">Main Home</h1>
+                <p class="mt-4 text-sm">Free resource that will help nderstand thecv designc process and improve theroi
+                  nderstand.</p>
+
+                <ul class="mt-8 text-sm">
+                  <li><i class="fas fa-chevron-right"></i> HTML 5</li>
+                  <li><i class="fas fa-chevron-right"></i> CSS 3</li>
+                  <li><i class="fas fa-chevron-right"></i> Git / GitHub</li>
+                  <li><i class="fas fa-chevron-right"></i> Photoshop</li>
+                  <li><i class="fas fa-chevron-right"></i> Web Deployment</li>
+                  <li class="mt-5"><button class="p-2 bg-blue-700 rounded text-white w-full">Visit <i
+                        class="fas fa-paper-plane"></i></button></li>
+                </ul>
+              </div>
+
+              <div id="websiteImage" class="p-3">
+                <img src="images/main-home-740-600.jpg" class="w-3/4 border-2 rounded-xl" />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+
+  </section>
+
+  <footer id="footer" class="p-20 text-center bg-pink-400">
+    <i class="fas fa-star mb-4 text-white  wow animate__animated animate__zoomIn"></i>
+
+    <h1 class="md:text-4xl text-2xl my-3  text-white  wow animate__animated animate__zoomIn">abir4534@gmail.com</h1>
+
+    <div class="my-10  text-gray-500 text-sm  wow animate__animated animate__zoomIn">
+      <a href="" class="p-3 hover:text-gray-100"> <i class="fab fa-twitter"></i> </a>
+      <a href="" class="p-3 hover:text-gray-100"> <i class="fab fa-facebook-f"></i> </a>
+      <a href="" class="p-3 hover:text-gray-100"> <i class="fab fa-instagram"></i> </a>
+      <a href="" class="p-3 hover:text-gray-100"> <i class="fab fa-linkedin-in"></i> </a>
+    </div>
+  </footer>
+
+  <div class="fixed p-3 bottom-0 right-0">
+    <a href="#home" class="text-blue-500 text-4xl"><i class="fas fa-arrow-alt-circle-up"></i></a>
+  </div>
+
+  <script src="https://kit.fontawesome.com/9418f17761.js" crossorigin="anonymous"></script>
+  <script>
+    function toggleMenu() {
+      const mobileMenuContent = document.getElementById('mobileMenuContent')
+      if (mobileMenuContent.getAttribute('class') === 'hidden') {
+        mobileMenuContent.setAttribute('class', 'block')
+      } else {
+        mobileMenuContent.setAttribute('class', 'hidden')
+      }
+    }
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('.splide').mount();
+      new WOW().init();
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script src="js/wow.min.js"></script>
+
+</body>
+
+</html>
